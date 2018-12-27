@@ -2,10 +2,11 @@
   "name": "mam",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "express-session": "^1.15.6",
     "morgan": "^1.9.1"
   },
   "devDependencies": {},
