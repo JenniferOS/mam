@@ -1,0 +1,9 @@
+-> Formulario solicitar [x]
+    Player:
+    Rol: 
+    Team:
+    Region:
+    Account:
+-> Tabla para ver los players []
+    Player | Rol | Team | Rank
+-> Base de datos []

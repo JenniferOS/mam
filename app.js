@@ -8,7 +8,7 @@ var session = require('express-session');
 var app = express();
 
 /* EXPRESS SETUP */
-app.use(morgan("combined"));
+app.use(morgan("dev"));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
@@ -21,6 +21,7 @@ app.use(session({
 
 /* ROUTES */
 app.use(require('./routes/index'));
+app.use(require('./routes/track'));
 
 /* Starting server */
 app.listen(3000, () => {

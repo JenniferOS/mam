@@ -1,0 +1,29 @@
+body {
+    background-color: crimson;
+    font-family: 'Raleway', sans-serif;
+    /* background-image: url('/img/neeko.jpg');
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.position {
+    margin: 70px auto;
+}
+
+.jumbotron {
+    background-image: url('/img/ahri.png');
+    background-position: 300% 10%;
+    background-size: 1000px 1100px;
+    background-repeat: no-repeat;
+    padding: 5rem 2rem;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:indianred;
+  color: white;
+  text-align: center;
+}
