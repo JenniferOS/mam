@@ -6,6 +6,7 @@ var session = require('express-session');
 
 //init. express
 var app = express();
+require('./database');
 
 /* EXPRESS SETUP */
 app.use(morgan("dev"));

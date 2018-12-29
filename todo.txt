@@ -7,3 +7,9 @@
 -> Tabla para ver los players []
     Player | Rol | Team | Rank
 -> Base de datos []
+
+
+
+pre-latam-pros database model:
+    Player, Rol, Team, Region, Account
+    
