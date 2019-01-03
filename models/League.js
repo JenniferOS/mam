@@ -6,10 +6,14 @@ var LeagueSchema = new Schema({
         type: String,
         required: true
     },
+    acronym: {
+        type: String,
+        required: true
+    },
     region: {
         type: String,
         required: true
     }
 });
 
-module.exports = mongoose.model('League', LeagueSchema);
+module.exports = mongoose.model('League', LeagueSchema, 'Leagues');

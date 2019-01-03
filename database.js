@@ -1,8 +1,19 @@
 var mongoose = require('mongoose');
+/* var PlayerModel = require('./models/Player');
+var TeamModel = require('./models/Team');
+var LeagueModel = require('./models/League');
+ */
+/* mongoose.set('useFindAndModify', false); */
 
-mongoose.set('useFindAndModify', false);
-mongoose.connect('mongodb://localhost:27017/mano-a-mano', {
-    useNewUrlParser: true
-})
-    .then(db => console.log('DB is connected'))
-    .catch(err => console.error(err))
+mongoose.connect('mongodb://localhost/mano-a-mano', {
+    useNewUrlParser: true,
+    useCreateIndex: true
+});
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function () {
+    // we're connected!
+    console.log("Connected");
+});
+

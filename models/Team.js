@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var { Schema } = mongoose;
+const ObjectId = Schema.ObjectId;
 var League = mongoose.model('League');
 
 var TeamSchema = new Schema({
@@ -12,7 +13,7 @@ var TeamSchema = new Schema({
         required: true
     },
     league: {
-        type: Schema.ObjectId,
+        type: ObjectId,
         ref: "League",
         required: true
     }
